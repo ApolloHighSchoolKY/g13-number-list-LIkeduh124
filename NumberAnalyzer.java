@@ -54,7 +54,7 @@ public class NumberAnalyzer
 		for(Number x: list)
 		{
 			//Typecasting because they could have not given us a number (i think)
-			if(((Number)x).isOdd())
+			if((x).isOdd())
 			{
 				oddCount++;
 			}
@@ -70,7 +70,7 @@ public class NumberAnalyzer
 		for(Number x: list)
 		{
 			//Checking through what already exists in reverse
-			if(!(((Number)x).isOdd()))
+			if(!((x).isOdd()))
 			{
 				evenCount++;
 			}
@@ -92,7 +92,7 @@ public class NumberAnalyzer
       	int perfectCount=0;
 		for(Number x: list)
 		{
-			if(((Number)x).isPerfect())
+			if((x).isPerfect())
 			{
 				perfectCount++;
 			}
