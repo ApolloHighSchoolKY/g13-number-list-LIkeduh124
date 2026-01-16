@@ -53,6 +53,7 @@ public class NumberAnalyzer
 
 		for(Number x: list)
 		{
+			//Typecasting because they could have not given us a number (i think)
 			if(((Number)x).isOdd())
 			{
 				oddCount++;
@@ -65,8 +66,10 @@ public class NumberAnalyzer
 	public int countEvens()
 	{
       	int evenCount=0;
+		//Just checking through all of them
 		for(Number x: list)
 		{
+			//Checking through what already exists in reverse
 			if(!(((Number)x).isOdd()))
 			{
 				evenCount++;
